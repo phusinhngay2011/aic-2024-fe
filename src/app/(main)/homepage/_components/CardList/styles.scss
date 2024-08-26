@@ -1,0 +1,45 @@
+.card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    
+    &__cards {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transition: grid-template-columns 0.5s ease-in-out;
+        justify-content: flex-start;
+        overflow: visible;
+        align-content: center;
+    }
+    
+    &__loading{
+        display: flex;
+        align-self: center;
+    }
+}
+
+.card-list-display-style {
+    position: fixed;
+    right: 20px;
+    top: 190px;
+}
+
+.ant-statistic {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.grid-transition {
+    transition: grid-template-columns 0.5s ease-in-out;
+}
+
+.grid-large {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-small {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

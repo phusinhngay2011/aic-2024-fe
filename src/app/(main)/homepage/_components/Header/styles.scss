@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    &__content {
+        margin-left: auto;
+        align-self: end;
+        display: flex;
+    }
+}
